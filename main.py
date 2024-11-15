@@ -1,5 +1,5 @@
 class Polygon:
-	def __init__(vertices, position, angle):
+	def __init__(self,vertices, position, angle):
 		self.vertices = vertices
 		self.position = position
 		self.angle = angle
