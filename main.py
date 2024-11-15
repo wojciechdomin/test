@@ -1,5 +1,9 @@
-print("Hello word")
+class Polygon:
+	def __init__(vertices, position, angle):
+		self.vertices = vertices
+		self.position = position
+		self.angle = angle
 
-for i in range(1,100):
-	print(i)
+p1 = new Polygon([(0.0,0.0),(0.0,1.0),(1.0,1.0),(1.0,0.0)],(5.0,4.0),0)
+p2 = new Polygon([(0.0,0.0),(0.0,2.0),(1.0,2.0),(1.0,0.0)],(3.0,2.0),0)
 
