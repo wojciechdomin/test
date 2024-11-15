@@ -15,7 +15,7 @@ red = (255, 0, 0)
 # Rectangle properties
 rect_x, rect_y = 200, 150
 rect_width, rect_height = 50, 30
-speed = 5
+speed = 0.1
 
 # Main loop
 running = True
