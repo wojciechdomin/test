@@ -1,7 +1,9 @@
 import math
+import pygame
 
 
-class Polygon:
+class Polygon: 
+	#wypukły!!!!
 	def __init__(self,vertices, position, angle):
 		self.vertices = vertices
 		self.position = position
@@ -21,8 +23,33 @@ def check_intersection(polygon1, polygon2):
 	#some bulshit
 	print("Nie zaimplementowano check_intersection")
 
+#def draw_frame():
+	
+
+	# Set up the display
+	
+	
+
+	# Colors
+	
+
+	# Display update
+	
+
 
 def main():
+	pygame.init()
+	screen = pygame.display.set_mode((400, 300))
+	pygame.display.set_caption("Simple Graphics")
+	white = (255, 255, 255)
+	blue = (0, 0, 255)
+
+	# Draw a rectangle
+	screen.fill(white)
+	pygame.draw.rect(screen, blue, (50, 50, 100, 50))
+	pygame.display.flip()
+	pygame.time.wait(2000)
+
 	p1 = Polygon([(0.0,0.0),(0.0,1.0),(1.0,1.0),(1.0,0.0)],(5.0,4.0),0)
 	p2 = Polygon([(0.0,0.0),(0.0,2.0),(1.0,2.0),(1.0,0.0)],(3.0,2.0),0)
 	print(get_polygon_coordinates(p1))
